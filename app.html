@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+    <nav class="sidebar">
+        <div class="logo">C.H.A.O.S</div>
+        <ul>
+            <li><a href="#" class="active">Entropy Monitor</a></li>
+            <li><a href="#">Disruption Nodes</a></li>
+            <li><a href="#">Anarchy Settings</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <header>
+            <h2>System Status: <span id="status-label">UNSTABLE</span></h2>
+        </header>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Entropy Level</h3>
+                <div class="meter-bg">
+                    <div id="entropy-bar" class="meter-fill"></div>
+                </div>
+                <p id="entropy-value">0%</p>
+            </div>
+            <div class="card">
+                <h3>Active Agents</h3>
+                <ul id="agent-list">
+                    <!-- Hardcoded data for now -->
+                    <li>Agent 404 - [STATUS: MISSING]</li>
+                    <li>Agent 500 - [STATUS: ERROR]</li>
+                </ul>
+            </div>
+        </div>
+        <button id="spike-button">TRIGGER ANOMALY</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
